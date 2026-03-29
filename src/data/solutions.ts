@@ -7,7 +7,8 @@ export const SOLUTIONS: Solution[] = [
     tag: "Enterprise",
     price: "$50K - $250K",
     status: "active",
-    description: "Integrated business management solutions for large-scale operations",
+    description:
+      "Integrated business management solutions for large-scale operations that unify finance, HR, supply chain, and manufacturing into a single platform. Our ERP implementations eliminate data silos and provide real-time visibility across every department. We configure, customize, and deploy systems that scale with your organization as it grows.",
     features: [
       "Real-time inventory management",
       "Financial automation",
@@ -15,7 +16,7 @@ export const SOLUTIONS: Solution[] = [
       "Multi-branch support",
       "Compliance reporting",
     ],
-    heroImage: "src/images/solutions/erp-systems.webp",
+    heroImage: "/images/solutions/erp-systems.webp",
   },
   {
     slug: "crm-solutions",
@@ -23,7 +24,8 @@ export const SOLUTIONS: Solution[] = [
     tag: "Sales & Marketing",
     price: "$10K - $50K",
     status: "active",
-    description: "Customer relationship management platforms for sales and marketing teams",
+    description:
+      "Customer relationship management platforms built for sales and marketing teams that need a complete view of every prospect and client interaction. We tailor CRM workflows to match your sales process, so your team spends less time on administration and more time closing deals. Seamless integrations with email, calendars, and marketing tools keep your pipeline moving.",
     features: [
       "Customer pipeline tracking",
       "Email integration",
@@ -31,7 +33,7 @@ export const SOLUTIONS: Solution[] = [
       "Analytics dashboard",
       "Mobile app access",
     ],
-    heroImage: "src/images/solutions/crm-solutions.webp",
+    heroImage: "/images/solutions/crm-solutions.webp",
   },
   {
     slug: "business-intelligence",
@@ -39,7 +41,8 @@ export const SOLUTIONS: Solution[] = [
     tag: "Analytics",
     price: "$30K - $150K",
     status: "active",
-    description: "Data analytics and visualization platforms for data-driven decisions",
+    description:
+      "Data analytics and visualization platforms that transform raw business data into actionable intelligence for faster, more confident decisions. We design custom dashboards that surface the KPIs that matter most to your leadership team, updated in real time. Predictive models and trend analysis help you anticipate market shifts before they impact revenue.",
     features: [
       "Real-time dashboards",
       "Predictive analytics",
@@ -47,7 +50,7 @@ export const SOLUTIONS: Solution[] = [
       "Data warehouse integration",
       "Advanced visualizations",
     ],
-    heroImage: "src/images/solutions/business-intelligence.webp",
+    heroImage: "/images/solutions/business-intelligence.webp",
   },
   {
     slug: "cloud-infrastructure",
@@ -55,7 +58,8 @@ export const SOLUTIONS: Solution[] = [
     tag: "Infrastructure",
     price: "$20K - $100K",
     status: "active",
-    description: "Scalable cloud platforms for modern application deployment and management",
+    description:
+      "Scalable cloud platforms engineered for modern application deployment, high availability, and operational cost control across any major cloud provider. We architect environments that auto-scale under demand spikes and shrink during quiet periods, keeping your spend aligned with actual usage. End-to-end security hardening and 24/7 monitoring ensure your workloads stay protected and performant.",
     features: [
       "Auto-scaling capabilities",
       "Multi-region deployment",
@@ -63,7 +67,7 @@ export const SOLUTIONS: Solution[] = [
       "Cost optimization",
       "24/7 monitoring",
     ],
-    heroImage: "src/images/solutions/cloud-infrastructure.webp",
+    heroImage: "/images/solutions/cloud-infrastructure.webp",
   },
   {
     slug: "ai-machine-learning",
@@ -71,7 +75,8 @@ export const SOLUTIONS: Solution[] = [
     tag: "Innovation",
     price: "$75K - $300K",
     status: "waitlist",
-    description: "Custom AI/ML solutions for predictive analytics and process automation",
+    description:
+      "Custom AI and machine learning solutions that embed predictive intelligence and process automation directly into your existing business workflows. Our data scientists collaborate with your team to identify high-value use cases, then build, train, and deploy models tuned to your specific data and goals. From natural language processing to computer vision, we deliver production-ready systems that generate measurable ROI.",
     features: [
       "Model training and optimization",
       "Natural language processing",
@@ -79,7 +84,7 @@ export const SOLUTIONS: Solution[] = [
       "Predictive forecasting",
       "Custom algorithm development",
     ],
-    heroImage: "src/images/solutions/ai-machine-learning.webp",
+    heroImage: "/images/solutions/ai-machine-learning.webp",
   },
 ];
 

@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { cn } from "@/lib/cn";
 
 type ButtonVariant = "primary" | "secondary";
@@ -33,19 +34,29 @@ const variantClasses: Record<ButtonVariant, string> = {
 const baseClasses =
   "inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
-export function Button({
-  children,
-  href,
-  onClick,
-  disabled,
-  variant = "primary",
-  className,
-}: ButtonProps) {
+export const Button = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps
+>(function Button(
+  {
+    children,
+    href,
+    onClick,
+    disabled,
+    variant = "primary",
+    className,
+  }: ButtonProps,
+  ref
+) {
   const classes = cn(baseClasses, variantClasses[variant], className);
 
   if (href !== undefined) {
     return (
-      <a href={href} className={classes}>
+      <a
+        href={href}
+        className={classes}
+        ref={ref as React.Ref<HTMLAnchorElement>}
+      >
         {children}
       </a>
     );
@@ -56,8 +67,9 @@ export function Button({
       onClick={onClick}
       disabled={disabled}
       className={classes}
+      ref={ref as React.Ref<HTMLButtonElement>}
     >
       {children}
     </button>
   );
-}
+});

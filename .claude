@@ -1,0 +1,101 @@
+# Getbizii — Project Intelligence
+
+## What Is Getbizii
+
+Getbizii is a **software-based technology partner** brand operated under **Nobel Gemini Ventures (NGV)**, a Wyoming Trust entity. Getbizii provides **business-in-a-box technology solutions** for entrepreneurs launching small, low-barrier-to-entry businesses. It is NOT a turnkey reseller — it is the tech architecture firm that builds, deploys, and manages the entire digital backbone for each business type.
+
+## Brand Positioning
+
+- **Role:** Premium technology partner, not a franchise or kit seller
+- **Value Prop:** "We build the tech. You build the empire."
+- **Target Audience:** Entrepreneurs and small business owners who need a fully operational digital business without hiring a dev team
+- **Price Range:** $7,500 – $35,000 per solution (varies by complexity)
+- **Parent Entity:** Nobel Gemini Ventures (NGV), Wyoming Trust
+
+## Six Technology Pillars (Every Bundle Includes)
+
+1. **Custom Development** — Bespoke websites, web apps, booking systems, client portals
+2. **Hosting & Storage** — Enterprise cloud hosting, SSL, CDN, automated backups, 99.9% uptime
+3. **CRM System** — Lead tracking, client databases, automated follow-ups, pipeline management, reporting
+4. **Branding & Identity** — Logo, color system, typography, business cards, social templates, brand guidelines
+5. **Marketing Systems** — Email sequences, social templates, SEO foundation, Google Business, ad creatives, lead funnels
+6. **Yearly Licensing** — Annual license covering hosting renewals, software updates, security patches, SSL, priority support
+
+## Business Solutions (Bundles)
+
+| # | Business | Price | Tag | Status |
+|---|----------|-------|-----|--------|
+| 1 | Mobile DNA & Livescanning | $12,500 | Biometric Tech | Active |
+| 2 | Party Rental | $15,000 | Event Tech | Active |
+| 3 | Print Reseller | $7,500 | E-Commerce | Active |
+| 4 | Mobile Detailing | $9,800 | Service Tech | Active |
+| 5 | Plumber | $18,500 | Field Service Tech | Active |
+| 6 | Mini Apparel Shop | $14,000 | Fashion Tech | Active |
+| 7 | Custom Jewelry | $22,000 | Luxury Tech | Active |
+| 8 | Kurbside | TBD | Coming Soon | Waitlist |
+
+## Design System
+
+- **Primary Palette:** Light blue family — `#2563EB` (primary), `#60A5FA` (sky), `#1E3A8A` (royal), `#0F1D3D` (navy)
+- **Accent:** Amber/Orange — `#F59E0B` (accent), `#D97706` (hot)
+- **Supporting:** Mint `#10B981`, Violet `#8B5CF6`, Coral `#F43F5E`
+- **Neutral:** Void `#070E1F` to White `#FFFFFF` gray scale
+- **Typography:** Plus Jakarta Sans (headings), DM Sans (body), JetBrains Mono (code/tech elements)
+- **Aesthetic:** Premium SaaS / tech-forward with dark hero sections, terminal-style code cards, gradient accents, glass effects
+- **Tone:** Bold, energetic, motivational, professional — speaks to hustlers and go-getters
+
+## Financing
+
+- Monthly payment plans starting at $399/mo
+- No hard credit pull for pre-qualification
+- 24hr approval decisions
+- 0% interest for qualifying applicants
+- Revenue share options available
+- Sample plan: $15,000 bundle → $625/mo over 24 months at 5.9% APR
+
+## Site Architecture
+
+```
+Home Page
+├── Hero (terminal deploy animation + CTA)
+├── Logo Scroll Bar (industries served)
+├── Six Pillars (tech stack cards)
+├── Business Solutions Grid (8 bundle cards)
+├── How It Works (4-step timeline)
+├── What's Included (dark section, 6 platform cards with tech tags)
+├── Financing (checklist + payment calculator card)
+├── Testimonials (3 review cards)
+├── CTA Banner
+├── Contact (info blocks + form with solution selector)
+└── Footer (NGV attribution, social links)
+
+Product Detail Pages (per bundle)
+├── Detail Hero (back link, tag, title, image)
+├── What We Build (feature list + sidebar pricing card)
+└── CTA Banner
+```
+
+## Key Technical Details
+
+- Single HTML file with client-side JS routing (no framework dependency)
+- All CSS inline (no external stylesheets beyond Google Fonts)
+- Scroll-reveal animations via IntersectionObserver pattern
+- Chat widget (UI mockup — needs real service integration)
+- Contact form (UI mockup — needs backend integration like Formspree)
+- Responsive breakpoints: 1080px, 768px, 480px
+- Images: Unsplash stock (replace with branded photos for production)
+
+## Integration Notes (Pending)
+
+- Chat: Consider Tawk.to, Crisp, or Bland AI for live chat
+- Forms: Wire to Formspree, Netlify Forms, or custom webhook (Slack integration exists for Thee Concierge)
+- Hosting: Deploy to Netlify, Vercel, or custom domain
+- Analytics: Google Analytics / Tag Manager not yet integrated
+- Payment: Stripe for checkout / financing applications not yet wired
+
+## Related Brands & Context
+
+- **Thee Concierge** — Premium financial services concierge (sister brand under NGV)
+- **Wecertifi** — Certification consulting
+- **NGV Events** — Event equipment
+- **The Zero Percent Family** — Community for financial empowerment

@@ -35,12 +35,6 @@ const sections: FooterSection[] = [
   },
 ];
 
-const socialLinks = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Twitter", href: "#" },
-];
-
 const linkClasses =
   "text-sm text-white/60 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded";
 
@@ -54,7 +48,7 @@ export function Footer() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         {/* Main grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Content sections */}
           {sections.map(({ heading, links }) => (
             <nav key={heading} aria-label={`${heading} links`}>
@@ -73,26 +67,6 @@ export function Footer() {
             </nav>
           ))}
 
-          {/* Social section */}
-          <nav aria-label="Social media links">
-            <h3 className="text-sm font-semibold text-white tracking-wide mb-4">
-              Social
-            </h3>
-            <ul role="list" className="flex flex-col gap-3">
-              {socialLinks.map(({ label, href }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    className={linkClasses}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
 
         {/* Footer meta */}

@@ -54,7 +54,8 @@ export const Button = React.forwardRef<
     return (
       <a
         href={href}
-        className={classes}
+        aria-disabled={disabled || undefined}
+        className={cn(classes, disabled ? "pointer-events-none cursor-not-allowed opacity-50" : "")}
         ref={ref as React.Ref<HTMLAnchorElement>}
       >
         {children}
@@ -64,6 +65,7 @@ export const Button = React.forwardRef<
 
   return (
     <button
+      type="button"
       onClick={onClick}
       disabled={disabled}
       className={classes}

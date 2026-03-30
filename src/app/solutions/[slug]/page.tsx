@@ -42,12 +42,12 @@ export default async function SolutionPage({
   }
 
   return (
-    <main>
+    <>
       <SolutionHero solution={solution} />
       <SolutionFeatures solution={solution} />
       <SolutionPricing solution={solution} />
       <SolutionCTA solution={solution} />
       <RelatedSolutions solution={solution} />
-    </main>
+    </>
   );
 }

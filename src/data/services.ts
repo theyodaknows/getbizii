@@ -53,157 +53,157 @@ const SERVICES: Service[] = [
       "Launch your LLC, S-Corp, or C-Corp with expert guidance. GetBizii handles state filings, EIN acquisition, operating agreements, and compliance so you can focus on growing your business.",
   },
   {
-    slug: "bookkeeping",
-    name: "Bookkeeping",
-    tagline: "Keep your finances organized and audit-ready",
+    slug: "credit-bureau",
+    name: "Credit Bureau Injection",
+    tagline: "Build business credit that opens doors",
     description:
-      "Accurate books are the heartbeat of a healthy business. Without clean financial records, you're flying blind — unable to spot cash flow problems, optimize spending, or prepare for tax season without a scramble. GetBizii's bookkeeping service gives you real-time financial clarity so you always know exactly where your business stands.\n\nEvery month our team reconciles your bank and credit card accounts, categorizes transactions using your chart of accounts, and delivers a complete set of financial statements: profit and loss, balance sheet, and cash flow statement. You get a clear picture of revenue, expenses, and margins — and we flag anything that looks unusual before it becomes a problem.\n\nWe integrate directly with your payroll provider, payment processors, and expense platforms to automate data flow and eliminate manual entry errors. Whether you're on QuickBooks, Xero, or another platform, we work within your existing tools or help you migrate to the right one.\n\nAt tax time, your books are already clean and categorized — no last-minute document hunts or emergency reconciliations. We prepare a tax-ready package your CPA or our in-house team can use immediately. For growing businesses, our bookkeeping feeds directly into monthly management reports with commentary so stakeholders can make informed decisions without digging through spreadsheets.",
+      "Most new businesses are invisible to the credit bureaus — and that invisibility costs them. Without an established business credit profile, you're forced to rely on personal credit for financing, locked out of net terms with vendors, and unable to qualify for the capital needed to grow. GetBizii's Credit Bureau Injection service builds your business credit profile from the ground up, fast.\n\nWe start by verifying your business is properly registered with the major commercial credit bureaus — Dun & Bradstreet, Experian Business, and Equifax Business — and that your business information is consistent, accurate, and reportable. A single discrepancy in your business name, address, or EIN can silently suppress your credit file for months.\n\nFrom there we establish your D-U-N-S Number if you don't already have one, and we begin building your trade line history through strategic vendor accounts that report to the bureaus. We identify net-30 and net-60 vendors who extend credit to newly formed businesses and help you establish a sequence of accounts that progressively builds your profile.\n\nAs your credit file matures, we monitor your scores across all three bureaus, dispute any inaccuracies, and guide you toward the next tier of credit — from vendor accounts to business lines of credit and beyond. Within 90–120 days, most clients have a fundable business credit profile they can present to lenders, leasing companies, and vendors who require creditworthy business references.",
     features: [
       {
-        icon: "BarChart3",
-        title: "Monthly Bank Reconciliation",
+        icon: "Database",
+        title: "Bureau Registration & Verification",
         description:
-          "We reconcile all bank and credit card accounts monthly, catching discrepancies early and ensuring your records always match your actual account balances.",
+          "We register and verify your business with Dun & Bradstreet, Experian Business, and Equifax Business — ensuring your file is consistent, accurate, and actively reportable.",
       },
       {
-        icon: "Tag",
-        title: "Transaction Categorization",
+        icon: "Hash",
+        title: "D-U-N-S Number Acquisition",
         description:
-          "Every income and expense transaction is accurately categorized to your chart of accounts, giving you clean data for reporting, budgeting, and tax preparation.",
+          "We secure your D-U-N-S Number — the universal business identifier required by major lenders, government contracts, and Fortune 500 vendors for supplier onboarding.",
       },
       {
         icon: "TrendingUp",
-        title: "Financial Statement Preparation",
+        title: "Trade Line Building",
         description:
-          "We deliver monthly profit and loss statements, balance sheets, and cash flow statements so you have a complete picture of your financial position.",
+          "We identify and establish net-30 and net-60 vendor accounts that report to commercial credit bureaus, creating a positive payment history that builds your credit score.",
       },
       {
-        icon: "ArrowLeftRight",
-        title: "Accounts Payable & Receivable",
+        icon: "BarChart3",
+        title: "Credit Score Monitoring",
         description:
-          "We track what you owe and what you're owed, helping you manage vendor payments and follow up on outstanding invoices to keep cash flow healthy.",
-      },
-      {
-        icon: "Users",
-        title: "Payroll Integration",
-        description:
-          "We sync with your payroll provider to ensure wages, taxes, and benefit deductions are properly recorded in your books without manual re-entry.",
-      },
-      {
-        icon: "CheckCircle2",
-        title: "Tax-Ready Records",
-        description:
-          "Your books are maintained year-round in a tax-ready state, so filing season requires no emergency cleanup — just hand off clean financials and move on.",
-      },
-    ],
-    icon: "BookOpen",
-    ctaLabel: "Start Bookkeeping",
-    ctaHref: "/contact?service=bookkeeping",
-    metaTitle: "Professional Bookkeeping Services for Small Business | GetBizii",
-    metaDescription:
-      "Stay audit-ready with monthly reconciliation, financial statements, and tax-ready books. GetBizii's bookkeeping service keeps your finances accurate and organized all year long.",
-  },
-  {
-    slug: "cpa",
-    name: "CPA Services",
-    tagline: "Strategic tax planning and compliance",
-    description:
-      "Most business owners pay far more in taxes than they need to — not because of bad luck, but because they lack a proactive tax strategy. GetBizii's CPA services go well beyond compliance. We are your year-round strategic partner, working with you to minimize your tax burden, plan for growth, and navigate the complexity of business taxation.\n\nWe start every engagement with a comprehensive review of your current entity structure, income profile, and deduction landscape. From there we build a forward-looking tax plan that identifies opportunities to reduce taxable income through legitimate strategies: retirement plan contributions, timing of income and expenses, depreciation elections, home office deductions, vehicle use, and more. We model multiple scenarios so you can make decisions with a clear view of the tax consequences.\n\nThroughout the year we calculate and track quarterly estimated tax payments so you're never caught short at year-end. If your business operates in multiple states, we manage multi-state apportionment, nexus analysis, and filings across every jurisdiction where you have obligations. When correspondence arrives from the IRS or a state agency, we handle the response — protecting you from unnecessary penalties and resolving issues quickly.\n\nAt tax time, we prepare your business and personal returns with meticulous attention to detail, ensuring every legitimate deduction is captured. And if your business needs audit representation, our CPAs stand with you every step of the way.",
-    features: [
-      {
-        icon: "Lightbulb",
-        title: "Tax Strategy Planning",
-        description:
-          "We build a customized annual tax plan that identifies legal strategies to reduce your tax liability — reviewing your entity, income structure, and available deductions.",
-      },
-      {
-        icon: "CalendarDays",
-        title: "Quarterly Estimated Taxes",
-        description:
-          "We calculate your quarterly estimated payments to keep you compliant and avoid underpayment penalties, adjusting projections as your income changes throughout the year.",
-      },
-      {
-        icon: "Building2",
-        title: "Entity Structure Optimization",
-        description:
-          "We evaluate whether your current entity election — sole proprietor, LLC, S-Corp, or C-Corp — is still the most tax-efficient choice as your revenue and circumstances evolve.",
-      },
-      {
-        icon: "DollarSign",
-        title: "Deduction Maximization",
-        description:
-          "From retirement contributions and vehicle use to home office and depreciation elections, we ensure every legitimate deduction is documented and claimed.",
+          "We track your Paydex, Experian Intelliscore, and Equifax Business Credit Risk scores across all three bureaus and report on your progress at every stage.",
       },
       {
         icon: "AlertCircle",
-        title: "IRS & State Correspondence",
+        title: "Dispute & Error Resolution",
         description:
-          "We handle all IRS notices and state agency inquiries on your behalf, providing professional responses that resolve issues efficiently and protect you from avoidable penalties.",
+          "We identify and dispute any inaccurate, outdated, or missing information on your commercial credit file that could be suppressing your scores or limiting your access to credit.",
+      },
+      {
+        icon: "ArrowUpRight",
+        title: "Fundability Roadmap",
+        description:
+          "We create a custom roadmap from your current credit position to a fully fundable business profile — outlining each milestone, account type, and timeline to reach lender-ready status.",
+      },
+    ],
+    icon: "CreditCard",
+    ctaLabel: "Build My Credit",
+    ctaHref: "/contact?service=credit-bureau",
+    metaTitle: "Business Credit Bureau Injection & Profile Building | GetBizii",
+    metaDescription:
+      "Build a fundable business credit profile with GetBizii. We register your business with all major credit bureaus, establish trade lines, and monitor your scores until you're lender-ready.",
+  },
+  {
+    slug: "data-aggregator",
+    name: "Data Aggregator",
+    tagline: "Get your business found everywhere it matters",
+    description:
+      "When customers search for businesses like yours, they're not just checking Google — they're checking Apple Maps, Yelp, Bing, Facebook, and dozens of other directories and data aggregators that feed local search results across the web. If your business information is missing, inconsistent, or outdated in these sources, you're losing customers before they ever reach your website.\n\nGetBizii's Data Aggregator service ensures your business is listed accurately and consistently across every major data source that matters. We start with a complete audit of your current presence — identifying every directory, aggregator, and citation where your business appears, and flagging any discrepancies in your name, address, phone number, website, or hours.\n\nFrom there we submit your correct information to the four primary U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute your data to hundreds of downstream directories, GPS systems, and voice assistants. We also directly manage your listings on the highest-traffic platforms: Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook.\n\nAccurate, consistent NAP (Name, Address, Phone) data is one of the strongest local SEO signals available to small businesses. By cleaning up your citation landscape, we improve your visibility in local pack results, voice search responses, and map-based queries — putting your business in front of customers actively looking for what you offer.",
+    features: [
+      {
+        icon: "Search",
+        title: "Citation Audit",
+        description:
+          "We conduct a full audit of your existing online citations — identifying every directory where your business appears and flagging inconsistencies that suppress local search rankings.",
       },
       {
         icon: "Globe",
-        title: "Multi-State Compliance",
+        title: "Primary Aggregator Submission",
         description:
-          "If you operate across state lines, we manage nexus analysis, apportionment calculations, and filings in every state where your business has tax obligations.",
+          "We submit your verified business data to the four major U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute to hundreds of downstream platforms.",
+      },
+      {
+        icon: "MapPin",
+        title: "Top Directory Management",
+        description:
+          "We directly manage your listings on Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook — ensuring photos, hours, categories, and contact info are accurate.",
+      },
+      {
+        icon: "CheckCircle2",
+        title: "NAP Consistency",
+        description:
+          "We standardize your Name, Address, and Phone number across every platform — eliminating the conflicting data that confuses search engines and costs you local ranking.",
+      },
+      {
+        icon: "RefreshCw",
+        title: "Ongoing Monitoring",
+        description:
+          "We monitor your listings for unauthorized changes, duplicate profiles, and new inaccuracies — keeping your data clean long after the initial submission.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Local SEO Impact Reporting",
+        description:
+          "We track your local search visibility over time, showing how citation consistency drives improvements in local pack rankings, map views, and direction requests.",
       },
     ],
-    icon: "Calculator",
-    ctaLabel: "Schedule Consultation",
-    ctaHref: "/contact?service=cpa",
-    metaTitle: "CPA Tax Planning & Compliance for Small Business | GetBizii",
+    icon: "Database",
+    ctaLabel: "Fix My Listings",
+    ctaHref: "/contact?service=data-aggregator",
+    metaTitle: "Business Data Aggregator & Citation Management | GetBizii",
     metaDescription:
-      "Stop overpaying taxes. GetBizii's CPA services deliver proactive tax strategy, quarterly planning, deduction maximization, and IRS representation for small business owners.",
+      "Ensure your business is found everywhere. GetBizii submits your data to all major aggregators, fixes citation inconsistencies, and manages your top directory listings for maximum local SEO impact.",
   },
   {
-    slug: "legal",
-    name: "Legal Services",
-    tagline: "Protect your business with experienced legal guidance",
+    slug: "visual-identity",
+    name: "Visual Identity",
+    tagline: "A brand that commands attention and earns trust",
     description:
-      "Every business faces legal risk — in contracts, employment relationships, intellectual property, and day-to-day operations. The difference between businesses that thrive and those that face costly disputes often comes down to having the right legal protections in place from the start. GetBizii's legal services give you access to experienced business attorneys who understand the realities of running a small and mid-size company.\n\nWe draft and review the contracts that govern your business relationships: client service agreements, vendor contracts, non-disclosure agreements, and partnership arrangements. Our attorneys ensure your agreements clearly define scope, payment terms, liability limits, and dispute resolution procedures — closing the gaps that lead to misunderstandings and litigation.\n\nFor growing teams, we prepare employment agreements, independent contractor arrangements, and offer letters that protect your business and set clear expectations. We advise on non-compete enforceability, wage and hour compliance, and proper worker classification to keep you on the right side of employment law.\n\nWe help founders and business owners protect their intellectual property — from trademark registration and trade secret policies to licensing agreements and IP assignment clauses in employment contracts. And when disputes arise, our team provides early-stage representation and negotiation to resolve conflicts quickly and cost-effectively before they escalate to litigation.",
+      "Your visual identity is the first thing customers see and the last thing they forget. It's not just a logo — it's the sum of every visual impression your business makes: the colors that convey your personality, the typography that sets your tone, the mark that becomes shorthand for everything you stand for. GetBizii designs complete visual identity systems for businesses that want to look as professional as they operate.\n\nEvery engagement begins with a discovery session to understand your business, your audience, and the brands you compete with. We study what's working in your industry and identify the visual white space where your brand can stand apart. From there our design team develops a brand concept that captures your positioning — not generic, not derivative, but distinctly yours.\n\nWe deliver a complete brand identity system: primary logo with multiple lockup variations, icon mark, color palette with precise hex, RGB, and CMYK values, typography hierarchy with licensed font selections, and a comprehensive brand guidelines document that gives your team and vendors everything they need to apply your identity consistently.\n\nBeyond the core system, we extend your identity across the touchpoints that matter most — business cards, letterhead, email signatures, social media profile kits, and pitch deck templates. We also design your website's visual framework so your online presence is a seamless extension of your brand, not an afterthought. When your visual identity is done right, it builds recognition with every impression and turns first-time customers into loyal advocates.",
     features: [
       {
-        icon: "FileText",
-        title: "Contract Drafting & Review",
+        icon: "Palette",
+        title: "Logo Design System",
         description:
-          "We draft and review client agreements, vendor contracts, and NDAs to ensure your interests are protected, terms are enforceable, and liability is clearly allocated.",
+          "We design a primary logo with full-color, single-color, and reversed variations, plus an icon mark — ensuring your brand works across every size and background.",
       },
       {
-        icon: "UserCheck",
-        title: "Employment Agreements",
+        icon: "Droplets",
+        title: "Color Palette",
         description:
-          "We prepare employment contracts, offer letters, and independent contractor agreements that define roles, compensation, and obligations while protecting your business.",
+          "We develop a strategic color system — primary, secondary, and neutral palettes — with precise hex, RGB, and CMYK values for consistent reproduction across print and digital.",
       },
       {
-        icon: "Lock",
-        title: "Intellectual Property Protection",
+        icon: "Type",
+        title: "Typography Hierarchy",
         description:
-          "We advise on trademark registration, trade secret policies, and IP assignment clauses to protect the assets that give your business its competitive edge.",
+          "We select and pair typefaces for your display and body copy that reinforce your brand personality, with usage rules for headings, subheads, captions, and body text.",
       },
       {
-        icon: "Shield",
-        title: "Liability Protection",
+        icon: "BookOpen",
+        title: "Brand Guidelines",
         description:
-          "We review your operating structure and agreements to identify and close legal gaps that could expose you to personal or business liability.",
+          "We document every element of your identity in a comprehensive brand guidelines PDF — the single source of truth your team, designers, and vendors use to keep your brand consistent.",
       },
       {
-        icon: "Home",
-        title: "Commercial Lease Review",
+        icon: "Layout",
+        title: "Collateral Design",
         description:
-          "Before you sign a commercial lease, we review every clause — rent escalations, build-out responsibilities, termination rights, and personal guarantee provisions.",
+          "We design the business touchpoints that make your brand tangible: business cards, letterhead, email signature, social media profile kit, and presentation templates.",
       },
       {
-        icon: "Handshake",
-        title: "Partnership & Shareholder Agreements",
+        icon: "Monitor",
+        title: "Digital Brand Extension",
         description:
-          "We draft and negotiate partnership agreements and shareholder arrangements that define decision-making rights, profit sharing, exit procedures, and dispute resolution.",
+          "We translate your brand identity into a digital framework — including website color tokens, component styles, and icon sets — so your online presence matches your brand system exactly.",
       },
     ],
-    icon: "Briefcase",
-    ctaLabel: "Consult with Legal",
-    ctaHref: "/contact?service=legal",
-    metaTitle: "Business Legal Services for Small Business Owners | GetBizii",
+    icon: "Layers",
+    ctaLabel: "Build My Brand",
+    ctaHref: "/contact?service=visual-identity",
+    metaTitle: "Visual Identity Design & Brand System | GetBizii",
     metaDescription:
-      "Protect your business with experienced legal guidance. GetBizii handles contracts, employment agreements, IP protection, and liability risk so you can operate with confidence.",
+      "Launch with a brand that commands attention. GetBizii designs complete visual identity systems — logo, color palette, typography, guidelines, and collateral — for businesses built to last.",
   },
 ];
 

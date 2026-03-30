@@ -26,7 +26,7 @@ type ButtonProps = ButtonAsAnchor | ButtonAsButton;
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600",
+    "bg-linear-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600",
   secondary:
     "bg-white/10 text-white border border-white/20 backdrop-blur-xl hover:bg-white/20",
 };

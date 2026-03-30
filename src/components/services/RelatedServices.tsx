@@ -2,9 +2,15 @@ import React from "react";
 import { Building2, BookOpen, Calculator, Briefcase } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { cn } from "@/lib/cn";
-import type { Service } from "@/types";
+import { getRelatedServices } from "@/data/services";
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string; "aria-hidden"?: boolean | "true" | "false" }>> = {
+type LucideIcon = React.ComponentType<{
+  size?: number;
+  className?: string;
+  "aria-hidden"?: boolean | "true" | "false";
+}>;
+
+const iconMap: Record<string, LucideIcon> = {
   Building2,
   BookOpen,
   Calculator,
@@ -12,17 +18,12 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
 };
 
 interface RelatedServicesProps {
-  currentServiceSlug: string;
-  allServices: Service[];
+  currentSlug: string;
+  count?: number;
 }
 
-export function RelatedServices({
-  currentServiceSlug,
-  allServices,
-}: RelatedServicesProps) {
-  const related = allServices
-    .filter((s) => s.slug !== currentServiceSlug)
-    .slice(0, 3);
+export function RelatedServices({ currentSlug, count = 3 }: RelatedServicesProps) {
+  const related = getRelatedServices(currentSlug, count);
 
   if (related.length === 0) {
     return null;
@@ -54,7 +55,7 @@ export function RelatedServices({
                   href={`/services/${service.slug}`}
                   className={cn(
                     "group block h-full rounded-lg",
-                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#070E1F]"
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-void"
                   )}
                 >
                   <Card className="h-full p-6 transition-colors duration-200 group-hover:border-white/20 group-hover:bg-white/10">

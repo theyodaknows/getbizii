@@ -102,9 +102,9 @@ export function SolutionHero({ solution }: SolutionHeroProps) {
                 Solutions
               </Link>
             </li>
-            <li className="flex items-center gap-2" aria-current="page">
+            <li className="flex items-center gap-2">
               <span aria-hidden="true" className="text-white/30">/</span>
-              <span className="text-white/80">{solution.name}</span>
+              <span aria-current="page" className="text-white/80">{solution.name}</span>
             </li>
           </ol>
         </nav>

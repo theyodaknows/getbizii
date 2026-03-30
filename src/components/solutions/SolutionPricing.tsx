@@ -35,16 +35,16 @@ export function SolutionPricing({ solution }: SolutionPricingProps) {
           {/* Right panel — Right for you */}
           {solution.rightForYou && solution.rightForYou.length > 0 && (
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <p className="text-xs uppercase tracking-widest text-white/40">
+              <h3 className="text-xs uppercase tracking-widest text-white/40">
                 This is right for you if&hellip;
-              </p>
+              </h3>
               <ul className="mt-3 space-y-3">
                 {solution.rightForYou.map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-2 text-sm text-white/65"
                   >
-                    <span className="mt-0.5 flex-shrink-0 text-emerald-400">
+                    <span className="mt-0.5 shrink-0 text-emerald-400">
                       →
                     </span>
                     {item}

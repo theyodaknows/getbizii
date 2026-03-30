@@ -20,6 +20,16 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "GetBizii — Business Identity Platform",
   description: "Build your business right the first time with GetBizii.",
+  openGraph: {
+    title: "GetBizii — Business Identity Platform",
+    description: "Build your business right the first time with GetBizii.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GetBizii — Business Identity Platform",
+    description: "Build your business right the first time with GetBizii.",
+  },
   icons: {
     icon: "/icon_dark.svg",
     shortcut: "/icon_dark.svg",

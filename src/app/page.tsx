@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-black overflow-hidden relative">
       {/* Fixed full-page aurora — behind everything */}
-      <div className="fixed inset-0 w-full h-full" aria-hidden="true">
+      <div className="fixed inset-0 w-full h-full pointer-events-none" aria-hidden="true">
         <AuroraBackground
           colorStops={["#475569", "#64748b", "#475569"]}
           amplitude={1.2}

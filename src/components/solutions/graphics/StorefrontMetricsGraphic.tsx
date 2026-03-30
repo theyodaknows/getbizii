@@ -1,7 +1,7 @@
 export function StorefrontMetricsGraphic() {
   const metrics = [
     { value: "48", label: "Active Listings" },
-    { value: "$3,240", label: "This Month" },
+    { value: "$3,240", label: "Revenue" },
     { value: "12%", label: "Conversion" },
     { value: "94", label: "Units Sold" },
   ];

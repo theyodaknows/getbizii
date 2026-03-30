@@ -11,7 +11,7 @@ import {
 
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
+export function generateStaticParams(): { slug: string }[] {
   return getAllSolutions().map((s) => ({ slug: s.slug }));
 }
 
@@ -22,7 +22,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const solution = getSolutionBySlug(slug);
-  if (!solution) return {};
+  if (!solution) return { title: "Solution Not Found" };
   return {
     title: `${solution.name} | GetBizii`,
     description: solution.shortDescription,

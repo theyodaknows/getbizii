@@ -4,9 +4,10 @@ export interface Solution {
   tag: string;
   price: string;
   status: "active" | "waitlist";
-  description: string;
+  shortDescription: string;
   features: string[];
-  heroImage: string;
+  rightForYou?: string[];
+  financingNote?: string;
 }
 
 export interface Pillar {

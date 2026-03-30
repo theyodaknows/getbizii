@@ -12,25 +12,26 @@ const sections: FooterSection[] = [
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Blog", href: "/blog" },
-      { label: "Press", href: "/press" },
+      { label: "About", href: "/" },
+      { label: "Blog", href: "/" },
+      { label: "Press", href: "/" },
     ],
   },
   {
-    heading: "Product",
+    heading: "Services",
     links: [
-      { label: "Services", href: "/services" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "Docs", href: "/docs" },
+      { label: "Business Setup", href: "/services/biz-setup" },
+      { label: "Bookkeeping", href: "/services/bookkeeping" },
+      { label: "CPA Services", href: "/services/cpa" },
+      { label: "Legal Services", href: "/services/legal" },
     ],
   },
   {
     heading: "Legal",
     links: [
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
-      { label: "Contact", href: "/contact" },
+      { label: "Privacy", href: "/" },
+      { label: "Terms", href: "/" },
+      { label: "Contact", href: "/" },
     ],
   },
 ];

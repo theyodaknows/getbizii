@@ -25,7 +25,7 @@ export function SolutionFeatures({ solution }: SolutionFeaturesProps) {
               key={feature}
               className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-4"
             >
-              <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-blue-500/20">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-500/20">
                 <Check size={12} className="text-blue-400" />
               </span>
               <span className="text-sm text-white/75">{feature}</span>

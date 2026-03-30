@@ -50,6 +50,22 @@ const sections: FooterSection[] = [
 const linkClasses =
   "text-sm text-white/60 hover:text-white transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded";
 
+function FooterLink({ href, label }: FooterLink) {
+  // Use a plain <a> for hash-only anchors so the browser handles scroll natively
+  if (href.startsWith("/#")) {
+    return (
+      <a href={href} className={linkClasses}>
+        {label}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={linkClasses}>
+      {label}
+    </Link>
+  );
+}
+
 export function Footer() {
   return (
     <footer className={cn("w-full bg-void border-t border-white/10 py-16 px-4")}>
@@ -86,11 +102,9 @@ export function Footer() {
                 {heading}
               </h3>
               <ul role="list" className="flex flex-col gap-3">
-                {links.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link href={href} className={linkClasses}>
-                      {label}
-                    </Link>
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <FooterLink {...link} />
                   </li>
                 ))}
               </ul>
@@ -101,7 +115,7 @@ export function Footer() {
         {/* Divider + copyright row */}
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-sm text-white/50">
-            &copy; {CURRENT_YEAR} GetBizii. All rights reserved.
+            &copy; {CURRENT_YEAR} GetBizii. A Nobel Gemini Ventures Company. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { MapPin } from "lucide-react";
+
 export function DetailingJobsGraphic() {
   const jobs = [
     { time: "8:30 AM", service: "Full Detail", rating: "★★★★★" },
@@ -27,7 +29,7 @@ export function DetailingJobsGraphic() {
             ))}
           </div>
           <div className="mt-3 rounded-md border border-violet-500/20 bg-violet-500/10 px-3 py-1.5 text-center text-[11px] text-violet-300">
-            📍 GPS Dispatch Active
+            <MapPin size={11} className="inline-block mr-1" />GPS Dispatch Active
           </div>
         </div>
       </div>

@@ -43,6 +43,7 @@ function SolutionGraphic({ slug }: { slug: string }) {
       return <StorefrontMetricsGraphic />;
     case "custom-jewelry":
       return <CustomOrderWorkflowGraphic />;
+    case "kurbside":
     default:
       return <ComingSoonGraphic />;
   }
@@ -136,14 +137,14 @@ export function SolutionHero({ solution }: SolutionHeroProps) {
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className={cn("text-2xl font-bold", isWaitlist ? "text-white/40" : "text-white")}>
                 {isWaitlist ? "TBD" : solution.price}
-                {!isWaitlist && (
-                  <span className="sr-only">One-time build fee</span>
-                )}
               </span>
               {!isWaitlist && (
-                <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm text-white/60" aria-hidden="true">
-                  One-time build fee
-                </span>
+                <>
+                  <span className="sr-only">One-time build fee</span>
+                  <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-sm text-white/60" aria-hidden="true">
+                    One-time build fee
+                  </span>
+                </>
               )}
             </div>
           </div>

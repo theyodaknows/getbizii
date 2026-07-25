@@ -18,14 +18,20 @@ function assertEq<T>(actual: T, expected: T, label: string): void {
     throw new Error(`FAIL: ${label} — expected ${expected}, got ${actual}`);
 }
 
-// ── 1. getAllServices returns all 4 ──────────────────────────────────────────
+// ── 1. getAllServices returns all 5 ──────────────────────────────────────────
 
 const all: Service[] = getAllServices();
-assertEq(all.length, 4, "getAllServices length");
+assertEq(all.length, 5, "getAllServices length");
 
 // ── 2. each service has every required field populated ────────────────────
 
-const REQUIRED_SLUGS = ["biz-setup", "bookkeeping", "cpa", "legal"] as const;
+const REQUIRED_SLUGS = [
+  "biz-setup",
+  "visual-identity",
+  "data-aggregator",
+  "credit-bureau",
+  "credit-monitoring",
+] as const;
 
 for (const service of all) {
   const ctx = `service "${service.slug}"`;
@@ -35,6 +41,13 @@ for (const service of all) {
   assertDefined(service.tagline, `${ctx} tagline`);
   assertDefined(service.description, `${ctx} description`);
   assertDefined(service.icon, `${ctx} icon`);
+
+  if (typeof service.price !== "number" || !Number.isFinite(service.price) || service.price <= 0)
+    throw new Error(`FAIL: ${ctx} price must be a positive number`);
+
+  if (service.priceType !== "one-time" && service.priceType !== "monthly")
+    throw new Error(`FAIL: ${ctx} priceType must be "one-time" or "monthly"`);
+
   assertDefined(service.ctaLabel, `${ctx} ctaLabel`);
   assertDefined(service.ctaHref, `${ctx} ctaHref`);
   assertDefined(service.metaTitle, `${ctx} metaTitle`);
@@ -56,7 +69,7 @@ for (const service of all) {
 // ── 3. slugs are unique ───────────────────────────────────────────────────
 
 const slugSet = new Set(all.map((s) => s.slug));
-assertEq(slugSet.size, 4, "unique slug count");
+assertEq(slugSet.size, 5, "unique slug count");
 
 for (const slug of REQUIRED_SLUGS) {
   if (!slugSet.has(slug)) throw new Error(`FAIL: slug "${slug}" is missing`);
@@ -84,4 +97,4 @@ for (const slug of REQUIRED_SLUGS) {
 
 // ── all checks passed ─────────────────────────────────────────────────────
 
-console.log("All 15 checks passed.");
+console.log("All checks passed.");

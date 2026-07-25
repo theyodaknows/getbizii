@@ -21,6 +21,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "About", href: "/about" },
       { label: "Newsletter", href: "/newsletter" },
+      { label: "Pricing", href: "/pricing" },
       { label: "Financing", href: "/financing" },
       { label: "Partners", href: "/partners" },
     ],
@@ -30,6 +31,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "Business Setup", href: "/services/biz-setup" },
       { label: "Credit Bureau Injection", href: "/services/credit-bureau" },
+      { label: "Business Credit Monitoring", href: "/services/credit-monitoring" },
       { label: "Data Aggregator", href: "/services/data-aggregator" },
       { label: "Visual Identity", href: "/services/visual-identity" },
       { label: "Business Solutions", href: "/#solutions" },

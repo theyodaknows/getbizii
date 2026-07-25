@@ -1,5 +1,5 @@
 import React from "react";
-import { Building2, BookOpen, Calculator, Briefcase } from "lucide-react";
+import { Building2, CreditCard, Database, Layers, Radar } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { cn } from "@/lib/cn";
 import { getRelatedServices } from "@/data/services";
@@ -12,9 +12,10 @@ type LucideIcon = React.ComponentType<{
 
 const iconMap: Record<string, LucideIcon> = {
   Building2,
-  BookOpen,
-  Calculator,
-  Briefcase,
+  CreditCard,
+  Database,
+  Layers,
+  Radar,
 };
 
 interface RelatedServicesProps {

@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Financing | GetBizii",
   description:
-    "Split your GetBizii investment into manageable monthly payments. Flexible financing options are available for all service packages and business solution builds.",
+    "Split your GetBizii Business Solution build into manageable monthly payments. Flexible installment financing with fast approvals and no hard credit pull.",
 };
 
 const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Choose Your Package",
+    title: "Choose Your Business Solution",
     description:
-      "Select any GetBizii service or business solution. Financing is available for all packages above $2,500.",
+      "Select any GetBizii Business Solution build. Financing is available for builds above $2,500.",
   },
   {
     step: "02",
@@ -31,14 +31,14 @@ const HOW_IT_WORKS = [
     step: "04",
     title: "We Get to Work",
     description:
-      "Work begins immediately upon approval. You don't wait to start building your business while payments are arranged.",
+      "Work on your Business Solution build begins immediately upon approval. You don't wait to start while payments are arranged.",
   },
 ];
 
 const BENEFITS = [
   "No large upfront payment required",
   "Fixed monthly payments with no hidden fees",
-  "Available for all services and solution builds",
+  "Available on every Business Solution build",
   "Work begins immediately upon approval",
   "Terms from 3 to 12 months",
   "Soft credit check for initial qualification",
@@ -64,9 +64,9 @@ export default function FinancingPage() {
           <span className="text-primary-sky">Pay Over Time.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60 sm:text-xl">
-          Your business foundation shouldn&apos;t be delayed by cash flow. GetBizii
-          offers flexible financing so you can start building the right way —
-          today — and spread the investment over time.
+          Your Business Solution build shouldn&apos;t be delayed by cash flow.
+          GetBizii offers flexible installment financing so you can start
+          building the right way — today — and spread the investment over time.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Button href="/contact" variant="primary">
@@ -99,7 +99,7 @@ export default function FinancingPage() {
               key={step}
               className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-8"
             >
-              <p className="font-heading text-4xl font-bold text-primary-sky/40">
+              <p className="font-heading text-4xl font-bold text-primary-sky/70">
                 {step}
               </p>
               <h3 className="mt-4 font-heading text-lg font-semibold text-white">
@@ -187,20 +187,20 @@ export default function FinancingPage() {
                 key={label}
                 className="rounded-xl bg-white/5 border border-white/10 p-6 text-center"
               >
-                <p className="text-xs uppercase tracking-widest text-white/40 mb-3">
+                <p className="text-xs uppercase tracking-widest text-white/70 mb-3">
                   {label}
                 </p>
                 <p className="font-heading text-3xl font-bold text-white">
                   {monthly}
                 </p>
                 <p className="text-sm text-white/50 mt-1">
-                  on a {amount} package
+                  on a {amount} build
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="mt-6 text-xs text-white/35 text-center">
+          <p className="mt-6 text-xs text-white/70 text-center">
             Example rates shown for illustration. Actual terms determined during
             consultation. Subject to approval.
           </p>
@@ -221,7 +221,7 @@ export default function FinancingPage() {
           </h2>
           <p className="mt-4 mx-auto max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
             Book a consultation and ask about financing options. We&apos;ll match you
-            with the right package and payment plan for your situation.
+            with the right Business Solution and payment plan for your situation.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href="/contact" variant="primary">

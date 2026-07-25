@@ -1,10 +1,10 @@
 import React from "react";
 import {
   Building2,
-  BookOpen,
-  Calculator,
-  Briefcase,
   Layers,
+  Database,
+  CreditCard,
+  Radar,
   FileText,
   Palette,
   Type,
@@ -19,10 +19,10 @@ import type { Service } from "@/types";
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string; "aria-hidden"?: boolean | "true" | "false" }>> = {
   Building2,
-  BookOpen,
-  Calculator,
-  Briefcase,
   Layers,
+  Database,
+  CreditCard,
+  Radar,
 };
 
 interface Breadcrumb {

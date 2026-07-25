@@ -1,11 +1,11 @@
-import { Building2, FileText, Calculator, Scale, Star } from "lucide-react";
+import { Star, FileText, Layers, Database, CreditCard } from "lucide-react";
 
 const TRUST_ITEMS = [
-  { icon: Building2, label: "NGV Company" },
-  { icon: FileText, label: "LLC & Corp Formation" },
-  { icon: Calculator, label: "Brand Presence" },
-  { icon: Scale, label: "Visible Compliance" },
   { icon: Star, label: "5-Star Rated" },
+  { icon: FileText, label: "LLC & Corp Formation" },
+  { icon: Layers, label: "Brand Presence" },
+  { icon: Database, label: "Visibility" },
+  { icon: CreditCard, label: "Establish Credit" },
 ];
 
 export function TrustBar() {

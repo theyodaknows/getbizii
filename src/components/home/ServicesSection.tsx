@@ -93,7 +93,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               <a
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group flex flex-col rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-all duration-200 hover:border-white/20 hover:bg-white/8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 lg:col-span-2"
+                className="group flex flex-col rounded-xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition-all duration-200 hover:border-white/20 hover:bg-white/8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 lg:col-span-1"
                 aria-label={`${service.name} — ${service.tagline}`}
               >
                 <div className="flex items-start justify-between">

@@ -39,6 +39,9 @@ yarn-error.log*
 # superpowers brainstorming companion sessions
 .superpowers/
 
+# git worktrees for isolated agent workspaces
+.worktrees/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

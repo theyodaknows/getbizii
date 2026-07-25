@@ -34,7 +34,7 @@ export default function HomePage() {
         <SolutionsSection solutions={solutions} />
         <HowItWorks />
         <Testimonials />
-        <FinancingSection />
+        <FinancingSection services={services} />
         <ContactSection />
       </div>
     </div>

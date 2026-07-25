@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 type ButtonVariant = "primary" | "secondary";
@@ -52,14 +53,14 @@ export const Button = React.forwardRef<
 
   if (href !== undefined) {
     return (
-      <a
+      <Link
         href={href}
         aria-disabled={disabled || undefined}
         className={cn(classes, disabled ? "pointer-events-none cursor-not-allowed opacity-50" : "")}
         ref={ref as React.Ref<HTMLAnchorElement>}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 

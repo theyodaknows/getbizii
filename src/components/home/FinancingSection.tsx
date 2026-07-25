@@ -2,6 +2,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import { PaymentCalculator } from "./PaymentCalculator";
 import { Button } from "@/components/ui";
 import { BUNDLE_PRICE } from "@/data/pricing";
+import { formatCurrency } from "@/lib/formatCurrency";
 import type { Service } from "@/types";
 
 const FINANCING_PERKS = [
@@ -11,14 +12,6 @@ const FINANCING_PERKS = [
   "0% interest for qualifying applicants",
   "Revenue share options available",
 ];
-
-function formatCurrency(n: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
 
 interface FinancingSectionProps {
   services: Service[];

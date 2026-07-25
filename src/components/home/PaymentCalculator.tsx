@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { formatCurrency } from "@/lib/formatCurrency";
 
 interface Bundle {
   name: string;
@@ -24,14 +25,6 @@ function calculateMonthly(principal: number): number {
   const r = ANNUAL_RATE / 12;
   const n = MONTHS;
   return (principal * r) / (1 - Math.pow(1 + r, -n));
-}
-
-function formatCurrency(n: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(n);
 }
 
 export function PaymentCalculator() {

@@ -4,15 +4,8 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui";
 import { BUNDLE_PRICE, MONITORING_FREE_MONTHS } from "@/data/pricing";
+import { formatCurrency } from "@/lib/formatCurrency";
 import type { Service } from "@/types";
-
-function formatCurrency(n: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  }).format(n);
-}
 
 interface PricingSelectorProps {
   services: Service[];

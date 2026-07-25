@@ -1,5 +1,6 @@
 import { Service } from "@/types";
 
+// placeholder — replace with real pricing
 const SERVICES: Service[] = [
   {
     slug: "biz-setup",
@@ -46,113 +47,13 @@ const SERVICES: Service[] = [
       },
     ],
     icon: "Building2",
+    price: 799,
+    priceType: "one-time",
     ctaLabel: "Get Started",
     ctaHref: "/contact?service=biz-setup",
     metaTitle: "Business Formation & Entity Setup | GetBizii",
     metaDescription:
       "Launch your LLC, S-Corp, or C-Corp with expert guidance. GetBizii handles state filings, EIN acquisition, operating agreements, and compliance so you can focus on growing your business.",
-  },
-  {
-    slug: "credit-bureau",
-    name: "Credit Bureau Injection",
-    tagline: "Build business credit that opens doors",
-    description:
-      "Most new businesses are invisible to the credit bureaus — and that invisibility costs them. Without an established business credit profile, you're forced to rely on personal credit for financing, locked out of net terms with vendors, and unable to qualify for the capital needed to grow. GetBizii's Credit Bureau Injection service builds your business credit profile from the ground up, fast.\n\nWe start by verifying your business is properly registered with the major commercial credit bureaus — Dun & Bradstreet, Experian Business, and Equifax Business — and that your business information is consistent, accurate, and reportable. A single discrepancy in your business name, address, or EIN can silently suppress your credit file for months.\n\nFrom there we establish your D-U-N-S Number if you don't already have one, and we begin building your trade line history through strategic vendor accounts that report to the bureaus. We identify net-30 and net-60 vendors who extend credit to newly formed businesses and help you establish a sequence of accounts that progressively builds your profile.\n\nAs your credit file matures, we monitor your scores across all three bureaus, dispute any inaccuracies, and guide you toward the next tier of credit — from vendor accounts to business lines of credit and beyond. Within 90–120 days, most clients have a fundable business credit profile they can present to lenders, leasing companies, and vendors who require creditworthy business references.",
-    features: [
-      {
-        icon: "Database",
-        title: "Bureau Registration & Verification",
-        description:
-          "We register and verify your business with Dun & Bradstreet, Experian Business, and Equifax Business — ensuring your file is consistent, accurate, and actively reportable.",
-      },
-      {
-        icon: "Hash",
-        title: "D-U-N-S Number Acquisition",
-        description:
-          "We secure your D-U-N-S Number — the universal business identifier required by major lenders, government contracts, and Fortune 500 vendors for supplier onboarding.",
-      },
-      {
-        icon: "TrendingUp",
-        title: "Trade Line Building",
-        description:
-          "We identify and establish net-30 and net-60 vendor accounts that report to commercial credit bureaus, creating a positive payment history that builds your credit score.",
-      },
-      {
-        icon: "BarChart3",
-        title: "Credit Score Monitoring",
-        description:
-          "We track your Paydex, Experian Intelliscore, and Equifax Business Credit Risk scores across all three bureaus and report on your progress at every stage.",
-      },
-      {
-        icon: "AlertCircle",
-        title: "Dispute & Error Resolution",
-        description:
-          "We identify and dispute any inaccurate, outdated, or missing information on your commercial credit file that could be suppressing your scores or limiting your access to credit.",
-      },
-      {
-        icon: "ArrowUpRight",
-        title: "Fundability Roadmap",
-        description:
-          "We create a custom roadmap from your current credit position to a fully fundable business profile — outlining each milestone, account type, and timeline to reach lender-ready status.",
-      },
-    ],
-    icon: "CreditCard",
-    ctaLabel: "Build My Credit",
-    ctaHref: "/contact?service=credit-bureau",
-    metaTitle: "Business Credit Bureau Injection & Profile Building | GetBizii",
-    metaDescription:
-      "Build a fundable business credit profile with GetBizii. We register your business with all major credit bureaus, establish trade lines, and monitor your scores until you're lender-ready.",
-  },
-  {
-    slug: "data-aggregator",
-    name: "Data Aggregator",
-    tagline: "Get your business found everywhere it matters",
-    description:
-      "When customers search for businesses like yours, they're not just checking Google — they're checking Apple Maps, Yelp, Bing, Facebook, and dozens of other directories and data aggregators that feed local search results across the web. If your business information is missing, inconsistent, or outdated in these sources, you're losing customers before they ever reach your website.\n\nGetBizii's Data Aggregator service ensures your business is listed accurately and consistently across every major data source that matters. We start with a complete audit of your current presence — identifying every directory, aggregator, and citation where your business appears, and flagging any discrepancies in your name, address, phone number, website, or hours.\n\nFrom there we submit your correct information to the four primary U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute your data to hundreds of downstream directories, GPS systems, and voice assistants. We also directly manage your listings on the highest-traffic platforms: Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook.\n\nAccurate, consistent NAP (Name, Address, Phone) data is one of the strongest local SEO signals available to small businesses. By cleaning up your citation landscape, we improve your visibility in local pack results, voice search responses, and map-based queries — putting your business in front of customers actively looking for what you offer.",
-    features: [
-      {
-        icon: "Search",
-        title: "Citation Audit",
-        description:
-          "We conduct a full audit of your existing online citations — identifying every directory where your business appears and flagging inconsistencies that suppress local search rankings.",
-      },
-      {
-        icon: "Globe",
-        title: "Primary Aggregator Submission",
-        description:
-          "We submit your verified business data to the four major U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute to hundreds of downstream platforms.",
-      },
-      {
-        icon: "MapPin",
-        title: "Top Directory Management",
-        description:
-          "We directly manage your listings on Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook — ensuring photos, hours, categories, and contact info are accurate.",
-      },
-      {
-        icon: "CheckCircle2",
-        title: "NAP Consistency",
-        description:
-          "We standardize your Name, Address, and Phone number across every platform — eliminating the conflicting data that confuses search engines and costs you local ranking.",
-      },
-      {
-        icon: "RefreshCw",
-        title: "Ongoing Monitoring",
-        description:
-          "We monitor your listings for unauthorized changes, duplicate profiles, and new inaccuracies — keeping your data clean long after the initial submission.",
-      },
-      {
-        icon: "TrendingUp",
-        title: "Local SEO Impact Reporting",
-        description:
-          "We track your local search visibility over time, showing how citation consistency drives improvements in local pack rankings, map views, and direction requests.",
-      },
-    ],
-    icon: "Database",
-    ctaLabel: "Fix My Listings",
-    ctaHref: "/contact?service=data-aggregator",
-    metaTitle: "Business Data Aggregator & Citation Management | GetBizii",
-    metaDescription:
-      "Ensure your business is found everywhere. GetBizii submits your data to all major aggregators, fixes citation inconsistencies, and manages your top directory listings for maximum local SEO impact.",
   },
   {
     slug: "visual-identity",
@@ -199,11 +100,172 @@ const SERVICES: Service[] = [
       },
     ],
     icon: "Layers",
+    price: 1299,
+    priceType: "one-time",
     ctaLabel: "Build My Brand",
     ctaHref: "/contact?service=visual-identity",
     metaTitle: "Visual Identity Design & Brand System | GetBizii",
     metaDescription:
       "Launch with a brand that commands attention. GetBizii designs complete visual identity systems — logo, color palette, typography, guidelines, and collateral — for businesses built to last.",
+  },
+  {
+    slug: "data-aggregator",
+    name: "Data Aggregator",
+    tagline: "Get your business found everywhere it matters",
+    description:
+      "When customers search for businesses like yours, they're not just checking Google — they're checking Apple Maps, Yelp, Bing, Facebook, and dozens of other directories and data aggregators that feed local search results across the web. If your business information is missing, inconsistent, or outdated in these sources, you're losing customers before they ever reach your website.\n\nGetBizii's Data Aggregator service ensures your business is listed accurately and consistently across every major data source that matters. We start with a complete audit of your current presence — identifying every directory, aggregator, and citation where your business appears, and flagging any discrepancies in your name, address, phone number, website, or hours.\n\nFrom there we submit your correct information to the four primary U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute your data to hundreds of downstream directories, GPS systems, and voice assistants. We also directly manage your listings on the highest-traffic platforms: Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook.\n\nAccurate, consistent NAP (Name, Address, Phone) data is one of the strongest local SEO signals available to small businesses. By cleaning up your citation landscape, we improve your visibility in local pack results, voice search responses, and map-based queries — putting your business in front of customers actively looking for what you offer.",
+    features: [
+      {
+        icon: "Search",
+        title: "Citation Audit",
+        description:
+          "We conduct a full audit of your existing online citations — identifying every directory where your business appears and flagging inconsistencies that suppress local search rankings.",
+      },
+      {
+        icon: "Globe",
+        title: "Primary Aggregator Submission",
+        description:
+          "We submit your verified business data to the four major U.S. data aggregators — Data Axle, Neustar Localeze, Foursquare, and Factual — which distribute to hundreds of downstream platforms.",
+      },
+      {
+        icon: "MapPin",
+        title: "Top Directory Management",
+        description:
+          "We directly manage your listings on Google Business Profile, Apple Maps, Bing Places, Yelp, and Facebook — ensuring photos, hours, categories, and contact info are accurate.",
+      },
+      {
+        icon: "CheckCircle2",
+        title: "NAP Consistency",
+        description:
+          "We standardize your Name, Address, and Phone number across every platform — eliminating the conflicting data that confuses search engines and costs you local ranking.",
+      },
+      {
+        icon: "RefreshCw",
+        title: "Ongoing Monitoring",
+        description:
+          "We monitor your listings for unauthorized changes, duplicate profiles, and new inaccuracies — keeping your data clean long after the initial submission.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Local SEO Impact Reporting",
+        description:
+          "We track your local search visibility over time, showing how citation consistency drives improvements in local pack rankings, map views, and direction requests.",
+      },
+    ],
+    icon: "Database",
+    price: 549,
+    priceType: "one-time",
+    ctaLabel: "Fix My Listings",
+    ctaHref: "/contact?service=data-aggregator",
+    metaTitle: "Business Data Aggregator & Citation Management | GetBizii",
+    metaDescription:
+      "Ensure your business is found everywhere. GetBizii submits your data to all major aggregators, fixes citation inconsistencies, and manages your top directory listings for maximum local SEO impact.",
+  },
+  {
+    slug: "credit-bureau",
+    name: "Credit Bureau Injection",
+    tagline: "Build business credit that opens doors",
+    description:
+      "Most new businesses are invisible to the credit bureaus — and that invisibility costs them. Without an established business credit profile, you're forced to rely on personal credit for financing, locked out of net terms with vendors, and unable to qualify for the capital needed to grow. GetBizii's Credit Bureau Injection service builds your business credit profile from the ground up, fast.\n\nWe start by verifying your business is properly registered with the major commercial credit bureaus — Dun & Bradstreet, Experian Business, and Equifax Business — and that your business information is consistent, accurate, and reportable. A single discrepancy in your business name, address, or EIN can silently suppress your credit file for months.\n\nFrom there we establish your D-U-N-S Number if you don't already have one, and we begin building your trade line history through strategic vendor accounts that report to the bureaus. We identify net-30 and net-60 vendors who extend credit to newly formed businesses and help you establish a sequence of accounts that progressively builds your profile.\n\nAs your credit file matures, we monitor your scores across all three bureaus, dispute any inaccuracies, and guide you toward the next tier of credit — from vendor accounts to business lines of credit and beyond. Within 90–120 days, most clients have a fundable business credit profile they can present to lenders, leasing companies, and vendors who require creditworthy business references.",
+    features: [
+      {
+        icon: "Database",
+        title: "Bureau Registration & Verification",
+        description:
+          "We register and verify your business with Dun & Bradstreet, Experian Business, and Equifax Business — ensuring your file is consistent, accurate, and actively reportable.",
+      },
+      {
+        icon: "Hash",
+        title: "D-U-N-S Number Acquisition",
+        description:
+          "We secure your D-U-N-S Number — the universal business identifier required by major lenders, government contracts, and Fortune 500 vendors for supplier onboarding.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Trade Line Building",
+        description:
+          "We identify and establish net-30 and net-60 vendor accounts that report to commercial credit bureaus, creating a positive payment history that builds your credit score.",
+      },
+      {
+        icon: "BarChart3",
+        title: "Credit Score Monitoring",
+        description:
+          "We track your Paydex, Experian Intelliscore, and Equifax Business Credit Risk scores across all three bureaus and report on your progress at every stage.",
+      },
+      {
+        icon: "AlertCircle",
+        title: "Dispute & Error Resolution",
+        description:
+          "We identify and dispute any inaccurate, outdated, or missing information on your commercial credit file that could be suppressing your scores or limiting your access to credit.",
+      },
+      {
+        icon: "ArrowUpRight",
+        title: "Fundability Roadmap",
+        description:
+          "We create a custom roadmap from your current credit position to a fully fundable business profile — outlining each milestone, account type, and timeline to reach lender-ready status.",
+      },
+    ],
+    icon: "CreditCard",
+    price: 1499,
+    priceType: "one-time",
+    ctaLabel: "Build My Credit",
+    ctaHref: "/contact?service=credit-bureau",
+    metaTitle: "Business Credit Bureau Injection & Profile Building | GetBizii",
+    metaDescription:
+      "Build a fundable business credit profile with GetBizii. We register your business with all major credit bureaus, establish trade lines, and monitor your scores until you're lender-ready.",
+  },
+  {
+    slug: "credit-monitoring",
+    name: "Business Credit Monitoring",
+    tagline: "Know the moment your business credit changes",
+    description:
+      "Building a business credit profile is only half the job — protecting and growing it is a continuous effort. Scores shift when vendors report late, when inquiries hit your file, or when a competitor's data gets crossed with yours. Without ongoing visibility, businesses miss the moment a problem appears and lose months undoing the damage. GetBizii's Business Credit Monitoring keeps a permanent watch on your file so nothing catches you off guard.\n\nOnce your credit profile is established — whether through our Credit Bureau Injection service or a file you've already built — we enroll you in continuous tracking across Dun & Bradstreet, Experian Business, and Equifax Business. Every change to your Paydex, Intelliscore, or Business Credit Risk score is logged, and anything that moves your file — a new trade line, a paid-as-agreed update, a hard inquiry — triggers a real-time alert.\n\nMonitoring isn't just a dashboard. When we spot an inaccuracy, an unauthorized inquiry, or a fraudulent trade line, we open a dispute on your behalf the same week. Each month we also review where your file stands against your next milestone — a higher vendor limit, a business line of credit, a lease — and tell you exactly what to do next to get there.\n\nThis is the service that turns a one-time credit build into a compounding asset. Businesses that monitor and actively manage their credit consistently qualify for better terms faster than those who build once and walk away.",
+    features: [
+      {
+        icon: "BarChart3",
+        title: "Tri-Bureau Score Tracking",
+        description:
+          "We continuously track your Paydex, Experian Intelliscore, and Equifax Business Credit Risk scores, so you always know exactly where your file stands across all three bureaus.",
+      },
+      {
+        icon: "BellRing",
+        title: "Real-Time Change Alerts",
+        description:
+          "The moment anything changes on your file — a new trade line, a hard inquiry, a payment update — you get an alert, instead of finding out months later.",
+      },
+      {
+        icon: "AlertCircle",
+        title: "Ongoing Dispute Support",
+        description:
+          "We open and manage disputes on any inaccurate, outdated, or fraudulent information the moment it appears — not just during initial setup, but for as long as you're monitored.",
+      },
+      {
+        icon: "TrendingUp",
+        title: "Monthly Growth Recommendations",
+        description:
+          "Every month we review your file against your next milestone — a higher vendor limit, a line of credit, a lease — and tell you the specific next step to get there.",
+      },
+      {
+        icon: "ShieldCheck",
+        title: "Fraud & Identity Monitoring",
+        description:
+          "We watch for unauthorized inquiries and fraudulent trade lines opened in your business's name, catching identity misuse before it damages your file.",
+      },
+      {
+        icon: "FileText",
+        title: "Monthly Credit Reports",
+        description:
+          "A plain-English summary of your credit position lands in your inbox every month — no bureau jargon, just what changed and what it means for your business.",
+      },
+    ],
+    icon: "Radar",
+    price: 49,
+    priceType: "monthly",
+    ctaLabel: "Start Monitoring",
+    ctaHref: "/contact?service=credit-monitoring",
+    metaTitle: "Business Credit Monitoring | GetBizii",
+    metaDescription:
+      "Track your business credit across Dun & Bradstreet, Experian, and Equifax with real-time alerts, ongoing dispute support, and monthly growth guidance from GetBizii.",
   },
 ];
 

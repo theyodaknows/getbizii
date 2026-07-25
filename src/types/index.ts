@@ -45,6 +45,8 @@ export interface Service {
   description: string;
   features: ServiceFeature[];
   icon: string;
+  price: number;              // USD
+  priceType: "one-time" | "monthly";
   ctaLabel: string;
   ctaHref: string;
   metaTitle: string;

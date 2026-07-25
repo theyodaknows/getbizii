@@ -10,7 +10,7 @@ const TAG_COLORS: Record<string, string> = {
   "Field Service Tech": "bg-black/70 text-rose-300 border-rose-500/30",
   "Fashion Tech": "bg-black/70 text-pink-300 border-pink-500/30",
   "Luxury Tech": "bg-black/70 text-yellow-300 border-yellow-500/30",
-  "Coming Soon": "bg-black/70 text-white/60 border-white/20",
+  "Coming Soon": "bg-black/70 text-white/50 border-white/20",
 };
 
 function tagClass(tag: string): string {

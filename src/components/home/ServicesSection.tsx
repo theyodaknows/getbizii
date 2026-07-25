@@ -1,12 +1,13 @@
-import { Building2, BookOpen, Calculator, Briefcase, ArrowRight } from "lucide-react";
+import { Building2, Layers, Database, CreditCard, Radar, ArrowRight } from "lucide-react";
 import type { Service } from "@/types";
 
 function getIcon(slug: string) {
   const map: Record<string, React.ComponentType<{ className?: string; "aria-hidden"?: "true" }>> = {
     "biz-setup": Building2,
-    bookkeeping: BookOpen,
-    cpa: Calculator,
-    legal: Briefcase,
+    "visual-identity": Layers,
+    "data-aggregator": Database,
+    "credit-bureau": CreditCard,
+    "credit-monitoring": Radar,
   };
   return map[slug] ?? Building2;
 }
@@ -34,7 +35,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
             Everything Your Business Needs
           </h2>
           <p className="mt-4 text-base text-white/60 sm:text-lg">
-            One platform. Four essential services. Zero guesswork.
+            One platform. Five essential services. Zero guesswork.
           </p>
         </div>
 
@@ -111,19 +112,6 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               </a>
             );
           })}
-
-          {/* CTA card */}
-          <a
-            href="#contact"
-            className="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-md transition-all duration-200 hover:border-white/20 hover:bg-white/8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 lg:col-span-2"
-          >
-            <p className="text-sm font-semibold text-white/70 group-hover:text-white transition-colors duration-200">
-              Not sure where to start?
-            </p>
-            <p className="mt-1 flex items-center gap-1 text-sm font-semibold text-primary-sky group-hover:gap-2 transition-all duration-200">
-              Talk to us →
-            </p>
-          </a>
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const TAG_COLORS: Record<string, string> = {
 };
 
 function tagClass(tag: string): string {
-  return TAG_COLORS[tag] ?? "bg-white/10 text-white/50 border-white/20";
+  return TAG_COLORS[tag] ?? "bg-black/70 text-white/70 border-white/20";
 }
 
 function parsePrice(price: string): number {
@@ -62,7 +62,7 @@ export function SolutionsSection({ solutions }: SolutionsSectionProps) {
 
         <ul
           role="list"
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[190px] [grid-auto-flow:dense]"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[minmax(190px,auto)] [grid-auto-flow:dense]"
         >
           {orderedSolutions.map((solution) => {
             const isWaitlist = solution.status === "waitlist";

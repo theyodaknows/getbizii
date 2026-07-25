@@ -5,6 +5,7 @@ import {
   Calculator,
   Briefcase,
   Layers,
+  Radar,
   FileText,
   Palette,
   Type,
@@ -23,6 +24,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
   Calculator,
   Briefcase,
   Layers,
+  Radar,
 };
 
 interface Breadcrumb {

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, X, Menu, Building2, CreditCard, Database, Layers } from "lucide-react";
+import { ChevronDown, X, Menu, Building2, CreditCard, Database, Layers, Radar } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 interface ServiceLink {
@@ -18,12 +18,14 @@ interface ServiceLink {
 const serviceLinks: ServiceLink[] = [
   { label: "Business Setup", tagline: "Register & launch your business", href: "/services/biz-setup", Icon: Building2 },
   { label: "Credit Bureau Injection", tagline: "Build fundable business credit", href: "/services/credit-bureau", Icon: CreditCard },
+  { label: "Business Credit Monitoring", tagline: "Track every change to your file", href: "/services/credit-monitoring", Icon: Radar },
   { label: "Data Aggregator", tagline: "Get found on every directory", href: "/services/data-aggregator", Icon: Database },
   { label: "Visual Identity", tagline: "Brand design that earns trust", href: "/services/visual-identity", Icon: Layers },
 ];
 
 const topLevelLinks = [
   { label: "Home", href: "/" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -221,6 +223,19 @@ export function Navbar() {
                   </motion.div>
                 )}
               </AnimatePresence>
+            </li>
+
+            <li>
+              <Link
+                href="/pricing"
+                aria-current={pathname === "/pricing" ? "page" : undefined}
+                className={cn(
+                  "text-sm font-medium px-3 py-1.5 rounded-full transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500",
+                  pathname === "/pricing" ? "text-white" : "text-white/70 hover:text-white"
+                )}
+              >
+                Pricing
+              </Link>
             </li>
 
             <li>

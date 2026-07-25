@@ -76,7 +76,7 @@ export function PaymentCalculator() {
           {formatCurrency(monthly)}
           <span className="text-xl font-normal text-white/60">/mo</span>
         </p>
-        <p className="mt-1.5 text-xs text-white/40">
+        <p className="mt-1.5 text-xs text-white/70">
           {formatCurrency(bundle.price)} total · {MONTHS} months · 5.9% APR
         </p>
       </div>

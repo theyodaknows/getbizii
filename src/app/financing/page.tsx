@@ -99,7 +99,7 @@ export default function FinancingPage() {
               key={step}
               className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-8"
             >
-              <p className="font-heading text-4xl font-bold text-primary-sky/40">
+              <p className="font-heading text-4xl font-bold text-primary-sky/70">
                 {step}
               </p>
               <h3 className="mt-4 font-heading text-lg font-semibold text-white">
@@ -187,7 +187,7 @@ export default function FinancingPage() {
                 key={label}
                 className="rounded-xl bg-white/5 border border-white/10 p-6 text-center"
               >
-                <p className="text-xs uppercase tracking-widest text-white/40 mb-3">
+                <p className="text-xs uppercase tracking-widest text-white/70 mb-3">
                   {label}
                 </p>
                 <p className="font-heading text-3xl font-bold text-white">
@@ -200,7 +200,7 @@ export default function FinancingPage() {
             ))}
           </div>
 
-          <p className="mt-6 text-xs text-white/35 text-center">
+          <p className="mt-6 text-xs text-white/70 text-center">
             Example rates shown for illustration. Actual terms determined during
             consultation. Subject to approval.
           </p>

@@ -170,7 +170,7 @@ export function ContactForm() {
         </div>
         <div>
           <label htmlFor="phone" className={labelClass}>
-            Phone <span className="text-white/30 normal-case tracking-normal font-normal">(optional)</span>
+            Phone <span className="text-white/70 normal-case tracking-normal font-normal">(optional)</span>
           </label>
           <input
             id="phone"

@@ -1,34 +1,62 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/cn";
+
 const STEPS = [
   {
     number: "01",
-    title: "Choose Your Path",
+    title: "AI Review",
     description:
-      "Browse our service packages or business solutions and select what fits your goals.",
+      "Our AI agent reviews your business profile and identifies the fastest path to build strong credit.",
   },
   {
     number: "02",
-    title: "We Build Your Stack",
+    title: "Identity Established",
     description:
-      "Our team handles formation, tech setup, branding, and every system you need.",
+      "We register your business identity across the major credit bureaus and data aggregators.",
   },
   {
     number: "03",
-    title: "Launch & Go Live",
+    title: "Build Credit",
     description:
-      "Your business is operational with everything configured and ready to take clients.",
+      "Your Copilot recommends tradelines and vendor relationships that build your credit file month over month.",
   },
   {
     number: "04",
-    title: "Grow With Support",
+    title: "Monitor Credit",
     description:
-      "Ongoing maintenance, updates, and strategic support as your business scales.",
+      "Real-time monitoring keeps you alerted to every change so you always know where you stand.",
   },
 ];
 
 export function HowItWorks() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
-      className="py-20 sm:py-28"
+      ref={sectionRef}
+      className={cn("py-20 sm:py-28", inView && "in-view")}
       aria-labelledby="how-it-works-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -50,16 +78,19 @@ export function HowItWorks() {
           <div
             aria-hidden="true"
             className="absolute left-0 right-0 top-10 hidden h-px bg-gradient-to-r from-transparent via-white/15 to-transparent lg:block"
-          />
+          >
+            <span className="how-it-works-glare" aria-hidden="true" />
+          </div>
 
           {STEPS.map((step, i) => (
             <li
               key={step.number}
               className="relative flex flex-col"
+              style={{ "--step-delay": `${i * 0.5}s` } as React.CSSProperties}
             >
               {/* Step number badge */}
               <div
-                className="relative z-10 mb-5 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500/30 to-cyan-500/20 border border-blue-400/20"
+                className="how-it-works-badge relative z-10 mb-5 flex h-20 w-20 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500/30 to-cyan-500/20 border border-blue-400/20"
                 aria-hidden="true"
               >
                 <span className="font-heading text-2xl font-bold text-blue-300">

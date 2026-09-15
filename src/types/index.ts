@@ -1,15 +1,3 @@
-export interface Solution {
-  slug: string;
-  name: string;
-  tag: string;
-  price: string;
-  status: "active" | "waitlist";
-  shortDescription: string;
-  features: string[];
-  rightForYou?: string[];
-  financingNote?: string;
-}
-
 export interface Pillar {
   icon: string;
   title: string;
@@ -28,7 +16,6 @@ export interface ContactFormData {
   lastName: string;
   email: string;
   phone?: string;
-  solution?: string;
   message: string;
 }
 
@@ -51,4 +38,15 @@ export interface Service {
   ctaHref: string;
   metaTitle: string;
   metaDescription: string;
+}
+
+export interface PricingTier {
+  slug: string;
+  name: string;
+  priceLabel: string;       // placeholder, e.g. "Starting at $199/mo"
+  description: string;
+  features: string[];
+  ctaLabel: string;
+  ctaHref: string;
+  highlighted?: boolean;    // "Most Popular" styling
 }

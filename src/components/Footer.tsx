@@ -34,7 +34,7 @@ const sections: FooterSection[] = [
       { label: "Business Credit Monitoring", href: "/services/credit-monitoring" },
       { label: "Data Aggregator", href: "/services/data-aggregator" },
       { label: "Visual Identity", href: "/services/visual-identity" },
-      { label: "Business Solutions", href: "/#solutions" },
+      { label: "Business Credit Copilot", href: "/#credit-copilot" },
     ],
   },
   {

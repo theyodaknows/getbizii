@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Financing | GetBizii",
   description:
-    "Split your GetBizii Business Solution build into manageable monthly payments. Flexible installment financing with fast approvals and no hard credit pull.",
+    "Split your GetBizii build into manageable monthly payments. Flexible installment financing with fast approvals and no hard credit pull.",
 };
 
 const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Choose Your Business Solution",
+    title: "Choose Your Build",
     description:
-      "Select any GetBizii Business Solution build. Financing is available for builds above $2,500.",
+      "Select any GetBizii service or plan. Financing is available for builds above $2,500.",
   },
   {
     step: "02",
@@ -31,14 +31,14 @@ const HOW_IT_WORKS = [
     step: "04",
     title: "We Get to Work",
     description:
-      "Work on your Business Solution build begins immediately upon approval. You don't wait to start while payments are arranged.",
+      "Work on your build begins immediately upon approval. You don't wait to start while payments are arranged.",
   },
 ];
 
 const BENEFITS = [
   "No large upfront payment required",
   "Fixed monthly payments with no hidden fees",
-  "Available on every Business Solution build",
+  "Available on every GetBizii build",
   "Work begins immediately upon approval",
   "Terms from 3 to 12 months",
   "Soft credit check for initial qualification",
@@ -64,16 +64,17 @@ export default function FinancingPage() {
           <span className="text-primary-sky">Pay Over Time.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60 sm:text-xl">
-          Your Business Solution build shouldn&apos;t be delayed by cash flow.
-          GetBizii offers flexible installment financing so you can start
-          building the right way — today — and spread the investment over time.
+          Building your business credit foundation shouldn&apos;t be delayed
+          by cash flow. GetBizii offers flexible installment financing so you
+          can start building the right way — today — and spread the
+          investment over time.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Button href="/contact" variant="primary">
             Apply for Financing
           </Button>
-          <Button href="/#solutions" variant="secondary">
-            Browse Solutions
+          <Button href="/#pricing-tiers" variant="secondary">
+            Browse Plans
           </Button>
         </div>
       </section>
@@ -221,15 +222,15 @@ export default function FinancingPage() {
           </h2>
           <p className="mt-4 mx-auto max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
             Book a consultation and ask about financing options. We&apos;ll match you
-            with the right Business Solution and payment plan for your situation.
+            with the right plan and payment schedule for your situation.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href="/contact" variant="primary">
               Book a Consultation
               <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Button>
-            <Button href="/#solutions" variant="secondary">
-              View Solutions
+            <Button href="/#pricing-tiers" variant="secondary">
+              View Pricing
             </Button>
           </div>
         </div>

@@ -8,7 +8,7 @@ const SERVICE_OPTIONS = [
   { value: "Bookkeeping", label: "Bookkeeping" },
   { value: "CPA Services", label: "CPA Services" },
   { value: "Legal Services", label: "Legal Services" },
-  { value: "Business Solutions — General", label: "Business Solutions — General" },
+  { value: "Business Credit Copilot", label: "Business Credit Copilot" },
   { value: "Other", label: "Other" },
 ];
 

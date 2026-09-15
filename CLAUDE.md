@@ -24,8 +24,8 @@ No test suite is configured. There are no test commands.
 
 - `src/app/` — App Router pages and layout. `layout.tsx` wraps all pages with `SkipLink`, `Navbar`, and `Footer`.
 - `src/components/` — UI split into `ui/` (primitives: Button, Card, SectionHeading, SkipLink) and `services/` (page-section components: ServiceHero, ServiceFeatures, ServiceCTA, RelatedServices).
-- `src/data/` — All content lives here as typed constants, never in components. `services.ts` exports `getAllServices()`, `getServiceBySlug(slug)`, and `getRelatedServices(currentSlug, count)`. `solutions.ts` exports `SOLUTIONS`.
-- `src/types/index.ts` — Shared interfaces: `Service`, `Solution`, `Pillar`, `Testimonial`, `ContactFormData`.
+- `src/data/` — All content lives here as typed constants, never in components. `services.ts` exports `getAllServices()`, `getServiceBySlug(slug)`, and `getRelatedServices(currentSlug, count)`. `pricingTiers.ts` exports `PRICING_TIERS`.
+- `src/types/index.ts` — Shared interfaces: `Service`, `PricingTier`, `Pillar`, `Testimonial`, `ContactFormData`.
 - `src/lib/cn.ts` — `cn()` utility (clsx + tailwind-merge). Import it for all conditional className construction.
 
 ### Routing

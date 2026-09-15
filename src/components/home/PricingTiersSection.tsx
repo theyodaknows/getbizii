@@ -35,8 +35,8 @@ export function PricingTiersSection() {
               )}
             >
               {tier.highlighted && (
-                <span className="mb-4 inline-flex rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-300">
-                  Most Popular
+                <span className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-blue-500/20 px-3 py-1 text-xs font-semibold text-blue-300">
+                  <span aria-hidden="true">★</span> Most Popular
                 </span>
               )}
               <h3 className="font-heading text-2xl font-bold text-white">

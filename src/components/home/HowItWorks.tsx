@@ -68,7 +68,7 @@ export function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-4 text-base text-white/60 sm:text-lg">
-            From idea to operational business in days, not months.
+            From first review to a monitored, fundable credit profile.
           </p>
         </div>
 

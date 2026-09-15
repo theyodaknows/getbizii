@@ -1,18 +1,16 @@
 import { getAllServices } from "@/data/services";
-import { getAllSolutions } from "@/data/solutions";
 import { AuroraBackground } from "@/components/aurora/AuroraBackground";
 import { HeroSection } from "@/components/home/HeroSection";
 import { TrustBar } from "@/components/home/TrustBar";
 import { ServicesSection } from "@/components/home/ServicesSection";
-import { SolutionsSection } from "@/components/home/SolutionsSection";
+import { CreditCopilotSection } from "@/components/home/CreditCopilotSection";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { Testimonials } from "@/components/home/Testimonials";
-import { FinancingSection } from "@/components/home/FinancingSection";
+import { PricingTiersSection } from "@/components/home/PricingTiersSection";
 import { ContactSection } from "@/components/home/ContactSection";
 
 export default function HomePage() {
   const services = getAllServices();
-  const solutions = getAllSolutions();
 
   return (
     <div className="min-h-screen bg-black overflow-hidden relative">
@@ -31,10 +29,10 @@ export default function HomePage() {
         <HeroSection />
         <TrustBar />
         <ServicesSection services={services} />
-        <SolutionsSection solutions={solutions} />
+        <CreditCopilotSection />
         <HowItWorks />
         <Testimonials />
-        <FinancingSection services={services} />
+        <PricingTiersSection />
         <ContactSection />
       </div>
     </div>

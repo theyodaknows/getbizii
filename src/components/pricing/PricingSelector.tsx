@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check } from "lucide-react";
 import { Button } from "@/components/ui";
-import { BUNDLE_PRICE, MONITORING_FREE_MONTHS } from "@/data/pricing";
 import { formatCurrency } from "@/lib/formatCurrency";
 import type { Service } from "@/types";
 
@@ -28,11 +26,6 @@ export function PricingSelector({ services }: PricingSelectorProps) {
     });
   }
 
-  const oneTimeTotal = services
-    .filter((s) => s.priceType === "one-time")
-    .reduce((sum, s) => sum + s.price, 0);
-  const savings = oneTimeTotal - BUNDLE_PRICE;
-
   const selectedOneTime = services
     .filter((s) => s.priceType === "one-time" && selected.has(s.slug))
     .reduce((sum, s) => sum + s.price, 0);
@@ -40,62 +33,8 @@ export function PricingSelector({ services }: PricingSelectorProps) {
     .filter((s) => s.priceType === "monthly" && selected.has(s.slug))
     .reduce((sum, s) => sum + s.price, 0);
 
-  const monitoring = services.find((s) => s.priceType === "monthly");
-
   return (
-    <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
-      {/* Bundle hero card */}
-      <div className="rounded-2xl border border-blue-400/30 bg-linear-to-br from-blue-500/25 to-blue-500/8 p-6 backdrop-blur-md sm:p-8">
-        <div className="flex items-start justify-between gap-4">
-          <h3 className="font-heading text-2xl font-bold text-white">
-            The Complete Bundle
-          </h3>
-          {savings > 0 && (
-            <span className="shrink-0 rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-300">
-              Save ${savings.toLocaleString()}
-            </span>
-          )}
-        </div>
-
-        <p className="mt-6 font-heading text-5xl font-bold text-white">
-          {formatCurrency(BUNDLE_PRICE)}
-          <span className="ml-2 text-base font-normal text-white/50">
-            one-time
-          </span>
-        </p>
-        <p className="mt-2 text-sm text-white/50">
-          <span className="line-through">{formatCurrency(oneTimeTotal)}</span>{" "}
-          if purchased separately
-        </p>
-
-        <ul role="list" className="mt-6 space-y-2">
-          {services.map((s) => (
-            <li
-              key={s.slug}
-              className="flex items-start gap-2 text-sm text-white/80"
-            >
-              <Check
-                className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400"
-                aria-hidden="true"
-              />
-              {s.name}
-            </li>
-          ))}
-        </ul>
-
-        {monitoring && (
-          <p className="mt-6 text-xs leading-relaxed text-white/55">
-            {monitoring.name} is included free for your first{" "}
-            {MONITORING_FREE_MONTHS} months, then billed at{" "}
-            {formatCurrency(monitoring.price)}/mo.
-          </p>
-        )}
-
-        <Button href="/contact" variant="primary" className="mt-6 w-full">
-          Get the Bundle
-        </Button>
-      </div>
-
+    <div className="mx-auto max-w-xl">
       {/* À la carte checklist */}
       <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md sm:p-8">
         <h3 className="font-heading text-2xl font-bold text-white">

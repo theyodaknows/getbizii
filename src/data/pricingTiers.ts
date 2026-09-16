@@ -1,6 +1,6 @@
 import type { PricingTier } from "@/types";
 
-// Placeholder pricing — replace with real figures (see BUNDLE_PRICE convention in src/data/pricing.ts)
+// Placeholder pricing — replace with real figures
 export const PRICING_TIERS: PricingTier[] = [
   {
     slug: "starter",

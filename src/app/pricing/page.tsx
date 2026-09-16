@@ -7,7 +7,7 @@ import { Button } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Pricing | GetBizii",
   description:
-    "Bundle every GetBizii service into one discounted package, or pick individual services à la carte. Net-30 terms are available on individual services.",
+    "Choose individual GetBizii services à la carte. Net-30 terms are available on individual services.",
 };
 
 export default function PricingPage() {
@@ -27,14 +27,13 @@ export default function PricingPage() {
           id="pricing-hero-heading"
           className="font-heading text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl"
         >
-          Bundle It.
+          Pick Only
           <br />
-          <span className="text-primary-sky">Or Pick Your Pieces.</span>
+          <span className="text-primary-sky">What You Need.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60 sm:text-xl">
-          Take every GetBizii service as one discounted bundle, or choose only
-          the pieces your business needs right now. Net-30 terms are available
-          on individual services.
+          Choose only the GetBizii services your business needs right now.
+          Net-30 terms are available on individual services.
         </p>
       </section>
 
@@ -44,7 +43,7 @@ export default function PricingPage() {
         aria-labelledby="pricing-selector-heading"
       >
         <h2 id="pricing-selector-heading" className="sr-only">
-          Bundle and à la carte pricing
+          À la carte service pricing
         </h2>
         <PricingSelector services={services} />
       </section>
@@ -62,8 +61,8 @@ export default function PricingPage() {
             Not sure which mix is right?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
-            Book a consultation and we&apos;ll map your goals to the shortest
-            path — bundle or à la carte — and set up payment terms that fit.
+            Book a consultation and we&apos;ll map your goals to the right mix
+            of services and set up payment terms that fit.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button href="/contact" variant="primary">

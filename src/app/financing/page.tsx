@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Financing | GetBizii",
   description:
-    "Split your GetBizii build into manageable monthly payments. Flexible installment financing with fast approvals and no hard credit pull.",
+    "Split your GetBizii purchase into manageable monthly payments. Flexible installment financing with fast approvals and no hard credit pull.",
 };
 
 const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Choose Your Build",
+    title: "Choose Your Services",
     description:
-      "Select any GetBizii service or plan. Financing is available for builds above $2,500.",
+      "Select any GetBizii service or subscription plan à la carte. Financing is available on purchases above $500.",
   },
   {
     step: "02",
@@ -31,14 +31,14 @@ const HOW_IT_WORKS = [
     step: "04",
     title: "We Get to Work",
     description:
-      "Work on your build begins immediately upon approval. You don't wait to start while payments are arranged.",
+      "Work begins immediately upon approval. You don't wait to start while payments are arranged.",
   },
 ];
 
 const BENEFITS = [
   "No large upfront payment required",
   "Fixed monthly payments with no hidden fees",
-  "Available on every GetBizii build",
+  "Available on every GetBizii service",
   "Work begins immediately upon approval",
   "Terms from 3 to 12 months",
   "Soft credit check for initial qualification",
@@ -172,16 +172,16 @@ export default function FinancingPage() {
 
           <div className="grid gap-4 sm:grid-cols-3">
             {[
-              { label: "3-Month Plan", amount: "$5,000", monthly: "$1,667/mo" },
+              { label: "3-Month Plan", amount: "$1,000", monthly: "$333/mo" },
               {
                 label: "6-Month Plan",
-                amount: "$10,000",
-                monthly: "$1,667/mo",
+                amount: "$2,500",
+                monthly: "$417/mo",
               },
               {
                 label: "12-Month Plan",
-                amount: "$15,000",
-                monthly: "$1,250/mo",
+                amount: "$5,000",
+                monthly: "$417/mo",
               },
             ].map(({ label, amount, monthly }) => (
               <div
@@ -195,7 +195,7 @@ export default function FinancingPage() {
                   {monthly}
                 </p>
                 <p className="text-sm text-white/50 mt-1">
-                  on a {amount} build
+                  on a {amount} purchase
                 </p>
               </div>
             ))}

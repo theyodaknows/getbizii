@@ -4,11 +4,15 @@ import { useState, type FormEvent } from "react";
 import { cn } from "@/lib/cn";
 
 const SERVICE_OPTIONS = [
+  { value: "General", label: "General" },
   { value: "Business Setup", label: "Business Setup" },
   { value: "Bookkeeping", label: "Bookkeeping" },
   { value: "CPA Services", label: "CPA Services" },
   { value: "Legal Services", label: "Legal Services" },
   { value: "Business Credit Copilot", label: "Business Credit Copilot" },
+  { value: "Referral Partnership", label: "Referral Partnership" },
+  { value: "Financing Partnership", label: "Financing Partnership" },
+  { value: "Reseller Partnership", label: "Reseller Partnership" },
   { value: "Other", label: "Other" },
 ];
 
